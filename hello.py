@@ -14,4 +14,6 @@ name = input("Enter name: ")
 age = input("Enter age: ")
 
 if validate_name(name) and validate_age(age):
-    print(f"Welcome {name}!" f"You'are {age}!")
+    print(f"Welcome {name}!" f"You'are {age}!") 
+else: 
+    print(f"You did not enter")
