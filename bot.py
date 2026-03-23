@@ -1,8 +1,11 @@
 from telegram import Update  
 
-  #  # a very simple Telegram bot to get your name and say hi 
+ # a very simple Telegram bot to get your name and say hi #
 
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
+
+# you literally get the Libraries inside the telegram to be able to build 
+# your bot 
 
 BOT_TOKEN = #personal "You have to insert your own TOKEN here "
 
