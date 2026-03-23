@@ -1,17 +1,18 @@
-from telegram import Update  
+from telegram import Update  # this means every message that 
+                             # user sends 
 
- # a very simple Telegram bot to get your name and say hi #
+ #### a very simple Telegram bot to get your name and say hi ###
 
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 
 # you literally get the Libraries inside the telegram to be able to build 
 # your bot 
 
-BOT_TOKEN = #personal "You have to insert your own TOKEN here "
+BOT_TOKEN = #personal "You have to insert your own TOKEN here"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE): 
 
-    user = update.message.from_user
+    user = update.message.from_user 
     
     name = user.first_name
 
