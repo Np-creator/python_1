@@ -1,20 +1,29 @@
-from telegram import Update
+from telegram import Update  
+
+  #  # a very simple Telegram bot to get your name and say hi 
+
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = #personal 
+BOT_TOKEN = #personal "You have to insert your own TOKEN here "
 
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE): 
+
     user = update.message.from_user
     
     name = user.first_name
+
     user_id = user.id
+
     text = update.message.text
     
     print(f"📩 ID:{user_id} | {name}: {text}")
+
     await update.message.reply_text(f"Your ID is: {user_id}")
 
 app = ApplicationBuilder().token(BOT_TOKEN).build()
+
 app.add_handler(MessageHandler(filters.TEXT, handle_message))
 
-print("Bot is running...")
+print("Your BOT runs now! . . .")
+
 app.run_polling()
