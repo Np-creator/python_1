@@ -18,3 +18,5 @@ if validate_name(name) and validate_age(age):
 
 
     #day 3 of learning   
+
+    #consitancy is the key 
