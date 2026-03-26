@@ -10,10 +10,8 @@ def validate_age(age):
         return False
     return True
 
-name = input("Enter name: ")
-age = input("Enter age: ")
+name = input("Enter a name: ")
+age = input("Enter an age: ")
 
 if validate_name(name) and validate_age(age):
-    print(f"Welcome {name}!" f"You'are {age}!") 
-else: 
-    print(f"You did not enter")
+    print(f"Welcome {name}!" f"You'are {age}!")  
