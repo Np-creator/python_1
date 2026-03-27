@@ -1,22 +1,19 @@
-guess_name = input("enter a name: ")
+# we wanna build a name guessing program 
+# the first name1 = "Ali" , name2 = "Robert" , name3 = "Sebs" 
+# the user has 3 guesses, each guess costs 1 attemp  
 
-name1 = "Alex"
-name2 = "brian"
-name3 = "Jash"
+name1 = "Ali" 
+name2 = "Robert"
+name3 = "Sebs"
+ 
+guess_name = input("Enter a name: ")
 
-attempts = 3
+attemp = 3
 
-while attempts > 0:
-    if guess_name not in [name1, name2, name3]:
-        print(guess_name)
-        attempts -= 1
-        print("Take another guess")
-    else:
-        break
-
-else:
-    print("bye")
-
-
-
-#This code needs to be debugged tomorrowWWW
+while attemp > 0:  
+    if guess_name != name1 or name2 or name3: 
+      print(f"You entered {guess_name} that's wrong") 
+      attemp -= 1 
+      break 
+    else:  
+       print(f"{guess_name} is correct!!!")
