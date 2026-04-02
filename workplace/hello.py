@@ -102,3 +102,28 @@ def length(words):
 
 print(length("hellow"))
 print(length("you have done it! "))
+
+# debugging and improving your own code is the most important skill of test everyone
+# should have 
+
+def add1(e,f): 
+    summe = e + f 
+    return summe
+print(add1(4,5)) 
+
+# the code above is actually the better made code of  
+# add() function  
+# we have saved the addition inside a summe 
+# then at the end we have printed out the summe
+
+first_name = input("Enter name: ")
+print(f"Hello {first_name}")
+print(f"{first_name} you car is {car1(1)} and your salary is {add1(100,23000)} Euros") 
+
+# you always have a function running inside the program  
+
+
+if len(first_name) > 2: 
+    print(f"You car is {car1(0)} and your salary is equal")
+else:
+    True
