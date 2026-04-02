@@ -35,3 +35,23 @@ def math(x):      # example one
     return x**2   # mathematical phrase
 print(math(2)) 
 
+
+def name(user_name="Alex"):
+    return user_name
+print(name("Bob")) 
+
+# think about making a def() by yourself...
+# EX: 3 cars - print out their models,prices, built year
+# Mercedes E-Class 2002 7,600 Euros
+# Ford Mustag 2013 21,000 Euros
+# Toyota RAV-4 2025 41,000 Euros
+
+def cars(car1,car2,car3):
+    car1 = "Mercdes"
+    car2 = "Ford Mustang"
+    car3 = "Toyota RAV-4"
+    models = car1 , car2, car3
+    return models
+print(cars('1','2','3'))
+
+
