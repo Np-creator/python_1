@@ -91,9 +91,14 @@ def car1(index):
     models = ['Mercedes', 'Mustang' , 'Toyota']
     return models[index]
 if car1(1) == "Mercedes": 
-    print("Hello")                #here we combined function and if statements 
+    print("Hello")                # here we combined function and if statements 
 else: 
     print("False")
 print(f"Car is {car1(0)}")
 
+def length(words):
+    sum1 = len(words)            # here we wrote a function which prints out
+    return sum1                  # the lenght of a String
 
+print(length("hellow"))
+print(length("you have done it! "))
