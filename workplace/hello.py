@@ -62,3 +62,38 @@ print(cars("a" , "b" , "c"))
 # which has more than one value! car1 = name = "Mercedes" , year = "2010" , price: 12,000 Euros 
 # we will learn it also a little bit later
 
+###########################################################################
+
+# now that we have learned some cool functions and wrote them by ourselves 
+# we wanna kinda use them inside a program. 
+
+print(f"The number of {cars} is {math(2)}") 
+
+# as you can see the program just give the output like this:  
+# The number of <function cars at 0x10dbf1800> is 4 
+# why? Because it cannot go and find the specific car 
+# that we have called! 
+# To avoid something like that we need a List [] of variable to  
+# save codes and save also our time 
+
+#def cars(car1,car2,car3):
+#    car1 = "Mercdes"
+#    car2 = "Ford Mustang"
+#    car3 = "Toyota RAV-4"
+#    models = car1 , car2, car3
+#    return models
+#print(cars("a" , "b" , "c")) 
+
+# instead of writing the madness above we need to  
+# just put all cars into one List[] 
+
+def car1(index):
+    models = ['Mercedes', 'Mustang' , 'Toyota']
+    return models[index]
+if car1(1) == "Mercedes": 
+    print("Hello")                #here we combined function and if statements 
+else: 
+    print("False")
+print(f"Car is {car1(0)}")
+
+
