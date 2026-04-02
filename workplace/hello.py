@@ -52,6 +52,13 @@ def cars(car1,car2,car3):
     car3 = "Toyota RAV-4"
     models = car1 , car2, car3
     return models
-print(cars('1','2','3'))
+print(cars("a" , "b" , "c"))
 
+# in this code we get the output like this: ('Mercdes', 'Ford Mustang', 'Toyota RAV-4')
+# since we wanna see the car models properly, I need to get back
+# and kinda debug it. Debugging > coding all the time
+# Also in order to add more values to a one parameter, here for example car pirce, 
+# Car model, etc. we shall learn Tuples first! In Tuples we have one parameter 
+# which has more than one value! car1 = name = "Mercedes" , year = "2010" , price: 12,000 Euros 
+# we will learn it also a little bit later
 
