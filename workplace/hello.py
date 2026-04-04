@@ -108,8 +108,11 @@ print(length("you have done it! "))
 
 def add1(e,f): 
     summe = e + f 
-    return summe
-print(add1(4,5)) 
+    multip = e * f
+    ergebnis = summe,multip          #modified and nicer looking def
+    return ergebnis
+summe,multip = add1(5,10)      
+print(f"Summe: {summe} \n Multiplication is: {multip}")
 
 # the code above is actually the better made code of  
 # add() function  
@@ -127,3 +130,5 @@ if len(first_name) > 2:
     print(f"You car is {car1(0)} and your salary is equal")
 else:
     True
+
+
