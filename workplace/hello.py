@@ -132,3 +132,30 @@ else:
     True
 
 
+type (add1)     # to see what kind of types our function have 
+type (cars)     
+type (car1)
+type (True)
+
+# so we wanna get the personal infos from a user for ex: 
+# name, last name, age 
+
+def personal_data(**data):
+    first_name1 = data.get("first_name1", "Max")
+    last_name1 = data.get("last_name1" , "Mustermann")
+    age1 = data.get("age1" , 18)
+    print(f"\033[34m{first_name1}\n{last_name1}\n{age1}\033[34m")
+
+personal_data()
+
+
+type (personal_data)
+
+def name_2(**list):
+    ergebnis = list.get ("ergebnis" , "Hello")
+    print(f"\033[35m{ergebnis} is LALA\033[35m")
+
+name_2(ergebnis = "Moin")
+
+
+
