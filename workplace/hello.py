@@ -157,5 +157,21 @@ def name_2(**list):
 
 name_2(ergebnis = "Moin")
 
+def teilnahmer(*liste):
+    print(f"\033[31m{liste}\033[31m")
+teilnahmer('Ali' , "tino" , "Qtantino")
 
+# wir wollen man jetzt ein Program schreiben 
+# in dem der Benutzer begrüsst wird 
+# wenn keine Namenangabe => "Max"
+# wenn wir selber geben  
 
+def begruessen(name3 = "Max"):       # def () Vorlage
+    print(f"Hello {name3}")          # die Funktion
+
+begruessen()                             # because we do not have any name
+                                         # the saved name will display (Max)
+
+begruessen("Ali")                        # here we gave the name  
+
+begruessen("Aliiiiii")
