@@ -10,4 +10,6 @@ def multi(a,b):
     multiplication = a * b  
     return multiplication 
 
-
+def daten(name): 
+    print(f"Hello {name}")  # I should search this and understand it 
+daten(__name__)
